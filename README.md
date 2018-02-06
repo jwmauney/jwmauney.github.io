@@ -1,2 +1,2 @@
 # jwmauney.github.io
-Mirror of SDF Home Page
+Mozilla Home Page created via their Basic CSS & HTML with JavaScript tutorial.
