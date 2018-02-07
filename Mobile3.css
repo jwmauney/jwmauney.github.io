@@ -1,0 +1,132 @@
+/*  Small screen works fine  in both browsers */
+
+body {
+	/*
+  padding-top: 20px;
+  */
+  background: #F5DEB3;
+}
+
+.grid-1 {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F5DEB3;
+  
+  grid-template-columns: 1fr;
+   grid-template-rows: 80px auto auto auto auto auto auto auto auto 80px;
+   grid-gap: 10px;
+  grid-template-areas: "header" "main1"
+     "main2" "main3" "main4""main5"
+     "main6" "main7" "main8" "footer";	
+}
+/* items */
+
+  .head h1 {   font-size: 24pt;  
+	border-bottom: 3px solid maroon;
+	color: maroon;
+  }
+
+
+.grid-1 div {
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  }
+
+  .head {
+  background: #F5DEB3;
+  grid-area: header;
+  justify-self: center;
+}
+
+.foot {
+  background: #F5DEB3;
+  grid-area: 10 / span 2;
+  justify-self: center;
+  align-self: start;
+}
+
+.item-2 {
+  background: #F5DEB3;
+  grid-area: main1;
+  justify-self: center;
+  float: right;
+}
+.item-3 {
+  background: #F5DEB3;
+  grid-area: main2;
+}
+.item-4 {
+  background: #F5DEB3;
+   grid-area: main3;
+  justify-self: center;
+}
+.item-5 {
+  background: #F5DEB3;
+   grid-area: main4;
+   }
+.item-6 {
+  background: #F5DEB3;
+   grid-area: main5;
+ justify-self: center;
+}
+.item-7 {
+  background: #F5DEB3;
+  grid-area: main6;
+}
+.item-8 {
+  background: #F5DEB3;
+  grid-area: main7;
+  justify-self: center;
+}
+.item-9 {
+  background: #F5DEB3;
+  grid-area: main8;
+}
+
+.hi { color: maroon;}
+/* Bigger browsers are now working  */
+
+@media only screen and (min-width: 500px) {
+	/*		   max-width: 800px;	  */
+	.grid-1 {
+		background-color: #F5DEB3;
+		/*
+		border: 2px solid brown;
+		border-radius: 5px;		
+		*/
+		grid-template-columns: 33% 62%;
+		grid-template-rows: 80px auto auto auto auto auto;
+		grid-gap: 20px;
+
+		grid-template-areas: "header   header"
+	      "main1 main2" 
+		  "main3 main4" 
+		  "main5 main6" 
+		  "main7 main8 "
+	                       "footer footer ";
+	font-family: Impacta, Ariel, sans-serif;
+	font-size: 20pt;
+	font-weight: 700;
+	}
+
+	.grid1 div {
+		background-color: #F5DEB3;
+		padding: 1em;
+		color: #d9480f;
+		font-size: 20px;
+	}	 
+.head {
+  grid-area: 1 / span 2;
+  }
+
+  .foot {
+ grid-area: 6 / span 2;
+  }
+
+}
+
+
+
+
